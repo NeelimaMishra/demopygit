@@ -8,7 +8,7 @@ v1 = 91
 v2 = 33
 v3 = 10
 l1 = [v1, v2, v3]
-print(l1)
+print("list is: ",l1)
 small_num = None
 for i in l1:
     if small_num == None:
