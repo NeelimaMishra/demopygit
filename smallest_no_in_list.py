@@ -13,8 +13,19 @@ small_num = None
 for i in l1:
     if small_num == None:
         small_num = i
+    elif small_num < i:
+        pass
+    else:
+        small_num = i
+print(small_num)
+
+'''
+#Other way of writing the same program
+for i in l1:
+    if small_num == None:
+        small_num = i
         continue
     if small_num > i:
         small_num = i
 print(small_num)
-
+'''
