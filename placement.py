@@ -16,5 +16,4 @@ def func(input):
         index += 1
     print(output)
 
-func([1,2,4,3,9,19,10])
-
+func([3,2,1])
