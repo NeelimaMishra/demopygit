@@ -16,4 +16,27 @@ while count < 2:
     count += 1
 print("2nd largest number is: ", sec_lar)
 
+#other way of doing this program
+'''
+l1 = [2,1,3]
+largest = None
+secondlargest = None
+for i in l1:
+    if largest is None:
+        largest = i
+        continue
+    elif secondlargest is None:
+        if i > largest:
+            secondlargest = largest
+            largest = i
+        else:
+            secondlargest = i
+        continue
+    if i > largest:
+        secondlargest = largest
+        largest = i
+    elif i > secondlargest and i < largest:
+        secondlargest = i
+'''
+
 
