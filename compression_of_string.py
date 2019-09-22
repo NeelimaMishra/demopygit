@@ -1,17 +1,23 @@
-str1 = 'aaabbab'
-count = 1
-temp = ''
-output = ''
+str1 = 'aaabbab' # expected output should be a3b2a1b1; string compression
+count = 0
+temp = None
+comp_str1 = ''
+
 for i in str1:
-    if temp == '':
+    if temp is None:
         temp = i
+        count += 1
         continue
     if temp == i:
         count += 1
+        #comp_str1 = comp_str1 + temp + str(count)
     else:
-        output = output + temp + str(count)
-        #print(output)
+        comp_str1 = comp_str1 + temp + str(count)
         count = 1
         temp = i
-output = output + temp + str(count)
-print(output)
+comp_str1 = comp_str1 + i + str(count)
+print(comp_str1)
+
+
+
+
