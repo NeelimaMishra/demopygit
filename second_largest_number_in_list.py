@@ -5,7 +5,7 @@ count = 0
 while count < 2:
     sec_lar = None
     for i in l1:
-        if sec_lar == None:
+        if sec_lar is None:
             sec_lar = i
             continue
         else:
