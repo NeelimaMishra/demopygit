@@ -1,9 +1,9 @@
-str1 = 'Ab,c,de!$' # Expected output 'c,b$a'
+str1 = 'Ab,c,de!$' # Expected output "ed,c,bA!$"
 temp_str = ''
 for i in str1:
     if i.isalpha():
         temp_str = i + temp_str
-print(temp_str) #cba
+print(temp_str) # "edcba"
 cnt = 0
 out_str = ''
 for i in str1:
